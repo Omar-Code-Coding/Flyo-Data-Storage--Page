@@ -1,0 +1,85 @@
+/////////////////////////////////////////////////////////////////
+////////////// Nav Tab //////////////////////////////////////////
+.nav {
+    display: flex;
+    flex-flow: column wrap;
+    grid-column: 1 / 2;
+
+    max-width: 34.9rem;
+    border-radius: 1.2rem 10rem 1.2rem 1.2rem;
+    padding: 4rem;
+
+    justify-self: end;
+    background-color: $color-primary-3;
+
+    &__logo {
+        width: 14.7rem;
+        margin: 0 16.3rem 3.3rem 0;
+    }
+
+    &__btn {
+        display: flex;
+    }
+
+    &__btn button:nth-child(2) {
+        margin: 0 1.8rem;
+    }
+}
+
+.btn {
+    width: 4.9rem;
+    height: 4.9rem;
+    outline: none;
+    border: 0;
+    border-radius: 1rem;
+    background-color: $color-primary-4;
+}
+
+/////////////////////////////////////////////////////////////////
+////////////// Usage Tab ////////////////////////////////////////
+.usage {
+    display: flex;
+    flex-flow: column wrap;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: end;
+
+    max-width: 53.9rem;
+    border-radius: 1.2rem;
+    padding: 4rem;
+
+    font-size: 1.5em;
+    color: $color-primary-2;
+    background-color: $color-primary-3;
+
+    &__info span{
+        color: $color-primary-1;
+        font-weight: 700;
+    }
+
+    &__bar {
+        display: block;
+        position: relative;
+
+        height: 1.8rem;
+        margin: 1.3rem 0 .9rem 0;
+
+        border-radius: 5rem;
+        background-color: $color-primary-4;
+    }
+
+    &__bar span {
+        display: block;
+        position: absolute;
+        bottom: 10%;  // fix for centering the 2 bars, cause flex container not working
+        left: .8%;    // fix for centering the 2 bars, cause flex container not working
+        height: 1.3rem;
+        width: 35rem;
+
+        border-radius: 5rem;
+        background: linear-gradient(90deg, rgba(255,163,153,1) 26%, rgba(255,77,151,1) 100%);
+    }
+}
+
+
+    

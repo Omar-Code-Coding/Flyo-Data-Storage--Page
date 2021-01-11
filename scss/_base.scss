@@ -1,0 +1,39 @@
+@import 'variables';
+
+* { 
+   margin: 0;
+   padding: 0;
+}
+
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+html {
+   box-sizing: border-box;
+   font-size: 62.5%;  // 10px
+   text-size-adjust: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: [margin-start] minmax(2rem, 10vw)
+                           [center-start] minmax(min-content, 1fr) [center-end]
+                           minmax(2rem, 10vw) [margin-end];
+    font-family: 'Raleway', sans-serif;
+    justify-items: center;
+    padding: 50vh 0;
+    background-color: $color-primary-4;
+    background-image: url(/images/bg-desktop.png);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, 53.9rem));
+    grid-column-gap: 4rem;
+    grid-column: center-start / center-end;
+}
