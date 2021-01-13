@@ -3,4 +3,47 @@ $color-primary-2: hsl(229, 7%, 55%);
 $color-primary-3: hsl(228, 56%, 26%);
 $color-primary-4: hsl(229, 57%, 11%);
 
-$color-gradient: linear-gradient(90deg, rgba(255,163,153,1) 26%, rgba(255,77,151,1) 100%);
+
+@media screen and (max-width: 59.375em) {
+    .container {
+        background-image: url(/images/bg-mobile.png);
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+    .wrapper {
+        font-size: 1.3rem;
+        grid-row-gap: 2rem;
+    }
+
+    .nav {
+        grid-column: 1 / span 2;
+        grid-row: 1 / 2;
+    }
+
+    .usage {
+        grid-column: 1 / span 2;
+        grid-row: 2 / 3;
+        padding-bottom: 6rem;
+
+        &__info {
+            text-align: center;
+        }
+    }
+
+    .alert {
+        grid-column: 1 / span 2;
+        grid-row: 2 / 3;
+
+        align-self: end;
+        justify-self: center;
+        
+        top: 20%;
+        border-radius: 1rem;
+
+        &::after {
+            width: 0;
+            height: 0;
+        }
+    }
+}

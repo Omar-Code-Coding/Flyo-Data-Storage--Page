@@ -18,22 +18,41 @@ html {
 
 .container {
     display: grid;
-    grid-template-columns: [margin-start] minmax(2rem, 10vw)
+    grid-template-columns: [margin-start] minmax(2rem, 8vw)
                            [center-start] minmax(min-content, 1fr) [center-end]
-                           minmax(2rem, 10vw) [margin-end];
+                           minmax(2rem, 8vw) [margin-end];
     font-family: 'Raleway', sans-serif;
     justify-items: center;
     padding: 50vh 0;
+    
     background-color: $color-primary-4;
     background-image: url(/images/bg-desktop.png);
-    background-size: 100% 50%;
+    background-size: 105% 53%;
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(2, minmax(min-content, 53.9rem));
+    grid-template-columns: minmax(min-content, 38rem) minmax(min-content, 53.9rem);
     grid-column-gap: 4rem;
     grid-column: center-start / center-end;
+    font-size: 1.4rem;
+}
+
+.attribution {
+   grid-column: center-start / center-end;
+   grid-row: 3 / 4;
+
+   margin-top: 5vh;
+   font-size: 1.1rem;
+   color: $color-primary-1;
+
+   & a {
+      text-decoration-color: aqua;
+   }
+
+   & a:visited {
+      color: rgb(255, 253, 163);
+   }
 }

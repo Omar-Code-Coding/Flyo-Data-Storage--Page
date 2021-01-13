@@ -36,9 +36,13 @@
 
               <!---------------------Alert Notification---------------------->
    <div class="alert">
-     <p class="alert__text">
-       <span class="alert__hightlight">185</span> GB Left
+     <p id="quota">
+      185
      </p>
+     <p id="dataType">
+       GB LEFT
+     </p>
+     
    </div>
     
                <!--------------------Usage Tab------------------->
@@ -47,19 +51,27 @@
       You’ve used <span>815 GB</span> of your storage
      </p>
 
-      <span class="usage__bar">
-        <span></span>
-      </span>
+     <div class="usage__progressBar">
+       <div id="progress">
+         <div id="progressHead"></div>
+       </div>
+     </div>
 
-     <p class="usage__num--1">
-       0 GB <span>1000 GB</span>
-     </p>
+     <div class="usage__quota">
+       <p>
+         0 GB
+       </p>
+       <p>
+         1000 GB
+       </p>
+     </div>
    </div>
+   
  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Omar-Code-Coding?tab=repositories">Omar Yasser</a>.
   </div>
 </body>
 </html>
